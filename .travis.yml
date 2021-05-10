@@ -3,9 +3,10 @@ arch: amd64
 os: linux
 
 script:
-- mkdir qt-4.8.6-build && cd qt-4.8.6-build
-- wget http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz
-- tar xzf qt-everywhere-opensource-src-4.8.6.tar.gz
-- cd qt-everywhere-opensource-src-4.8.6
-- ./configure # go through the dialogue 
-- make -j16
+- cd $HOME
+- wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
+- tar xzf cmake-2.8.12.2.tar.gz
+- cd cmake-2.8.12.2
+- ./configure --prefix=$HOME/software
+- make
+- make install
