@@ -4,4 +4,5 @@ os: linux
 
 script:
 - cd $HOME
-- echo "In home"
+- wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
+- tar xzf cmake-2.8.12.2.tar.gz
