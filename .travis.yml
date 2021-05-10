@@ -8,4 +8,4 @@ script:
 - tar xzf qt-everywhere-opensource-src-4.8.6.tar.gz
 - cd qt-everywhere-opensource-src-4.8.6
 - ./configure # go through the dialogue 
-- make -j<# of cores>
+- make -j16
