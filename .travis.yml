@@ -1,0 +1,8 @@
+language: generic
+arch: amd64
+os: linux
+dist: xenial
+
+script:
+- cd $HOME
+- echo "In home"
