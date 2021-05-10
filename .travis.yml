@@ -8,3 +8,5 @@ script:
 - tar xzf cmake-2.8.12.2.tar.gz
 - cd cmake-2.8.12.2
 - ./configure --prefix=$HOME/software
+- make
+- make install
